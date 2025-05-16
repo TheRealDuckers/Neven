@@ -174,11 +174,13 @@ body, html {
    
     <p><span class="w3-tag">Drop me a message!</span> I aim to reply within 2 working days.</p>
     
-    <form action="" target="_blank">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email address" required name="Email"></p>
       
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your message" required name="Message"></p>
+       <input type="hidden" name="redirect" value="https://web3forms.com/success">
       <p><button class="w3-button w3-black" type="submit">This form doesn't work yet.</button></p>
     </form>
   </div>
